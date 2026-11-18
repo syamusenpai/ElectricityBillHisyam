@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VoltWise palette: deep teal + electric amber -->
+    <color name="teal_900">#0F4C5C</color>
+    <color name="teal_700">#16697A</color>
+    <color name="teal_100">#D3ECEF</color>
+    <color name="amber_500">#F4A300</color>
+    <color name="amber_100">#FFF1CC</color>
+    <color name="amber_900">#6B4700</color>
+    <color name="red_700">#B3261E</color>
+
+    <color name="bg">#F3F7F7</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#1B2B2E</color>
+    <color name="text_secondary">#55686B</color>
+    <color name="divider">#DCE5E6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+
+    <color name="ic_launcher_background">#0F4C5C</color>
+</resources>

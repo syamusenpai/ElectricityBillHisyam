@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Month (dropdown) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/monthLayout"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_month"
+        app:helperText="@string/helper_month"
+        app:startIconDrawable="@drawable/ic_calendar">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/monthInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Units (numeric keyboard only) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/unitsLayout"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/hint_units"
+        app:helperText="@string/helper_units"
+        app:startIconDrawable="@drawable/ic_bolt"
+        app:suffixText="@string/suffix_kwh">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/unitsInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="4" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Rebate (slider) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/VoltWise.Value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_rebate" />
+
+        <TextView
+            android:id="@+id/rebateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pill"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:textColor="@color/amber_900"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/rebateSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stepSize="0.5"
+        android:value="0"
+        android:valueFrom="0"
+        android:valueTo="5"
+        app:thumbColor="@color/amber_500"
+        app:tickVisible="true"
+        app:trackColorActive="@color/amber_500"
+        app:trackColorInactive="@color/amber_100" />
+
+    <TextView
+        style="@style/VoltWise.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helper_rebate"
+        android:textSize="12sp" />
+</LinearLayout>

@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">VoltWise</string>
+    <string name="subtitle_main">Electricity Bill Estimator</string>
+    <string name="subtitle_history">Saved Bills</string>
+    <string name="subtitle_detail">Bill Details</string>
+    <string name="subtitle_about">About</string>
+
+    
+    <string name="student_name">HISYAM ROSLI</string>
+    <string name="student_id">Student ID: 2024260168</string>
+    <string name="student_group">Group: CSDCS2515B</string>
+    <string name="course_code_name">ICT602 – Mobile Technology and Development</string>
+    <string name="app_website_url">https://github.com/syamusenpai/ElectricityBillHisyam</string>
+    <string name="copyright">© 2026 Hisyam Rosli. All rights reserved.\nBuilt for ICT602 individual assignment.</string>
+
+    <!-- Menu -->
+    <string name="menu_history">Saved bills</string>
+    <string name="menu_help">How to use</string>
+    <string name="menu_about">About</string>
+
+    <!-- Calculator page -->
+    <string name="how_to_use">How to use</string>
+    <string name="quick_steps">1. Pick the month.\n2. Enter the electricity used (kWh), from 1 to 1000.\n3. Slide to set your rebate (0% – 5%).\n4. Tap Calculate, then Save to History to keep it.</string>
+    <string name="bill_details">Bill details</string>
+    <string name="hint_month">Month</string>
+    <string name="helper_month">Choose the billing month</string>
+    <string name="hint_units">Electricity used</string>
+    <string name="helper_units">Whole number from 1 to 1000</string>
+    <string name="suffix_kwh">kWh</string>
+    <string name="label_rebate">Rebate</string>
+    <string name="helper_rebate">Slide to choose 0% – 5% (steps of 0.5%)</string>
+    <string name="action_calculate">Calculate</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_save">Save to History</string>
+    <string name="action_save_anyway">Save anyway</string>
+    <string name="action_view">View</string>
+    <string name="action_got_it">Got it</string>
+    <string name="result_title">Estimated bill</string>
+    <string name="result_heading">%1$s · %2$d kWh</string>
+    <string name="label_total_charges">Total charges</string>
+    <string name="label_rebate_amount">Rebate</string>
+    <string name="rebate_amount">%1$s (− %2$s)</string>
+    <string name="label_final_cost">Final cost after rebate</string>
+    <string name="label_breakdown">How it was calculated</string>
+    <string name="tariff_note">Rates: 1–200 kWh 21.8 sen · 201–300 kWh 33.4 sen · 301–600 kWh 51.6 sen · 601–1000 kWh 54.6 sen</string>
+
+    <!-- Validation and notices -->
+    <string name="error_month">Please select a month</string>
+    <string name="error_units_empty">Please enter the electricity used</string>
+    <string name="error_units_range">Must be between 1 and 1000 kWh</string>
+    <string name="notice_fix_errors">Please fix the highlighted fields</string>
+    <string name="notice_saved">%1$s bill saved to history</string>
+    <string name="notice_save_failed">Could not save. Please try again.</string>
+    <string name="notice_updated">Record updated</string>
+    <string name="notice_deleted">Record deleted</string>
+    <string name="notice_record_missing">This record no longer exists</string>
+    <string name="notice_no_browser">No browser app found to open the link</string>
+    <string name="dialog_duplicate_title">Month already saved</string>
+    <string name="dialog_duplicate_message">You already have a saved bill for %1$s. Save another record for this month?</string>
+    <string name="help_dialog_text">1. Month – tap the field and choose January to December.\n\n2. Electricity used – type the units (kWh) shown on your meter or bill. Allowed range: 1 to 1000.\n\n3. Rebate – drag the slider to your rebate percentage, from 0% to 5%.\n\n4. Tap Calculate. The total charges and final cost appear below on this page, with a block-by-block breakdown.\n\n5. Tap Save to History to store the result. Open Saved bills (clock icon) to view, edit or delete saved records.</string>
+
+    <!-- History page -->
+    <string name="history_hint">Tap a month to view, edit or delete it.</string>
+    <string name="history_empty">No saved bills yet.\nCalculate a bill and tap “Save to History”.</string>
+    <string name="label_final_cost_short">Final cost</string>
+
+    <!-- Detail page -->
+    <string name="label_month">Month</string>
+    <string name="label_units">Electricity used</string>
+    <string name="units_value">%1$d kWh</string>
+    <string name="label_rebate_percent">Rebate</string>
+    <string name="label_final">Final cost</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save_changes">Save changes</string>
+    <string name="edit_record">Edit record</string>
+    <string name="preview_value">New total: %1$s · New final cost: %2$s</string>
+    <string name="preview_invalid">Enter valid values to see the new amounts.</string>
+    <string name="dialog_delete_title">Delete this record?</string>
+    <string name="dialog_delete_message">The %1$s bill (%2$s) will be permanently deleted.</string>
+
+    <!-- About page -->
+    <string name="about_student">Student</string>
+    <string name="about_app">About the app</string>
+    <string name="about_description">VoltWise estimates your monthly electricity bill using block tariff rates. Enter the month, the electricity used and your rebate, and it works out the total charges and the final cost after rebate. Every estimate is stored offline on your phone so you can review, edit or delete it later.</string>
+    <string name="about_website">App website</string>
+    <string name="action_open_website">Open website</string>
+    <string name="student_photo_desc">Student photo</string>
+    <string name="about_instructions"><![CDATA[
+<b>1. Choose the month</b><br/>Tap the <i>Month</i> field and pick January to December. The current month is selected for you.<br/><br/>
+<b>2. Enter electricity used</b><br/>Type the units in kWh, a whole number from 1 to 1000. A red message appears under the field if the value is missing or out of range.<br/><br/>
+<b>3. Set your rebate</b><br/>Drag the <i>Rebate</i> slider from 0% to 5% in steps of 0.5%.<br/><br/>
+<b>4. Calculate</b><br/>Tap <i>Calculate</i>. The total charges, rebate amount and final cost appear on the same page, with a breakdown of each tariff block.<br/><br/>
+<b>5. Save</b><br/>Tap <i>Save to History</i> to store the result in the phone\'s local database.<br/><br/>
+<b>6. View saved bills</b><br/>Tap the clock icon in the title bar. The list shows each month and its final cost.<br/><br/>
+<b>7. Edit or delete</b><br/>Tap a month in the list to see all details. Tap <i>Edit</i> to change the values (the amounts are recalculated) or <i>Delete</i> to remove the record.<br/><br/>
+<b>Tariff rates</b><br/>First 200 kWh: 21.8 sen/kWh<br/>Next 100 kWh (201–300): 33.4 sen/kWh<br/>Next 300 kWh (301–600): 51.6 sen/kWh<br/>Next 400 kWh (601–1000): 54.6 sen/kWh<br/><br/>
+Final cost = Total charges − (Total charges × Rebate %)
+]]></string>
+</resources>
